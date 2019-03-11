@@ -7,8 +7,12 @@ public class RomanNumeral {
             return "I";
         } else if (arabicNumber == 2) {
             return "II";
-        } else {
+        } else if (arabicNumber == 3) {
             return "III";
+        } else if (arabicNumber == 4) {
+            return "IV";
+        } else {
+            return "V";
         }
     }
 }
