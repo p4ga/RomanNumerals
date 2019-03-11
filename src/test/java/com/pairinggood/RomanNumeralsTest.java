@@ -61,4 +61,18 @@ public class RomanNumeralsTest {
 
     }
 
+    @Test
+    public void whenArabicNumberFiveEntered_RomanNumeral_V_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(5);
+
+        //assert
+        Assert.assertEquals("V",romanNumeral);
+
+    }
+
 }
