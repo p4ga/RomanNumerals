@@ -75,4 +75,74 @@ public class RomanNumeralsTest {
 
     }
 
+    @Test
+    public void whenArabicNumberTenEntered_RomanNumeral_X_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(10);
+
+        //assert
+        Assert.assertEquals("X",romanNumeral);
+
+    }
+
+    @Test
+    public void whenArabicNumberFiftyEntered_RomanNumeral_L_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(50);
+
+        //assert
+        Assert.assertEquals("L",romanNumeral);
+
+    }
+
+    @Test
+    public void whenArabicNumberOneHundredEntered_RomanNumeral_C_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(100);
+
+        //assert
+        Assert.assertEquals("C",romanNumeral);
+
+    }
+
+    @Test
+    public void whenArabicNumberFiveHundredEntered_RomanNumeral_D_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(500);
+
+        //assert
+        Assert.assertEquals("D",romanNumeral);
+
+    }
+
+    @Test
+    public void whenArabicNumberOneThousandEntered_RomanNumeral_M_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(1000);
+
+        //assert
+        Assert.assertEquals("M",romanNumeral);
+
+    }
+
 }

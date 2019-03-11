@@ -11,8 +11,20 @@ public class RomanNumeral {
             return "III";
         } else if (arabicNumber == 4) {
             return "IV";
-        } else {
+        } else if (arabicNumber == 5) {
             return "V";
+        } else if (arabicNumber == 10) {
+            return "X";
+        } else if (arabicNumber == 50) {
+            return "L";
+        } else if (arabicNumber == 100) {
+            return "C";
+        } else if (arabicNumber == 500) {
+            return "D";
+        } else if (arabicNumber == 1000) {
+            return "M";
+        } else {
+            return "null";
         }
     }
 }
