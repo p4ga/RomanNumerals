@@ -76,6 +76,20 @@ public class RomanNumeralsTest {
     }
 
     @Test
+    public void whenArabicNumberSixEntered_RomanNumeral_VI_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(6);
+
+        //assert
+        Assert.assertEquals("VI",romanNumeral);
+
+    }
+
+    @Test
     public void whenArabicNumberTenEntered_RomanNumeral_X_Returned(){
 
         //arrange
