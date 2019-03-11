@@ -33,4 +33,18 @@ public class RomanNumeralsTest {
 
     }
 
+    @Test
+    public void whenArabicNumberThreeEntered_RomanNumeral_III_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(3);
+
+        //assert
+        Assert.assertEquals("III",romanNumeral);
+
+    }
+
 }
