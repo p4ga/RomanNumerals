@@ -3,28 +3,62 @@ package com.pairinggood;
 public class RomanNumeral {
 
     public String convert(int arabicNumber) {
-        if (arabicNumber == 1) {
-            return "I";
-        } else if (arabicNumber == 2) {
-            return "II";
-        } else if (arabicNumber == 3) {
-            return "III";
-        } else if (arabicNumber == 4) {
-            return "IV";
-        } else if (arabicNumber == 5) {
-            return "V";
-        } else if (arabicNumber == 10) {
-            return "X";
-        } else if (arabicNumber == 50) {
-            return "L";
-        } else if (arabicNumber == 100) {
-            return "C";
-        } else if (arabicNumber == 500) {
-            return "D";
-        } else if (arabicNumber == 1000) {
-            return "M";
-        } else {
-            return "null";
+
+        String romanNumeral = "";
+
+        while (arabicNumber > 0) {
+
+            if (arabicNumber == 4) {
+
+                arabicNumber = arabicNumber - 4;
+                romanNumeral = romanNumeral + "IV";
+            }
+
+            if (arabicNumber == 5) {
+
+                arabicNumber = arabicNumber - 5;
+                romanNumeral = romanNumeral + "V";
+            }
+
+            if (arabicNumber == 10) {
+
+                arabicNumber = arabicNumber - 10;
+                romanNumeral = romanNumeral + "X";
+            }
+
+            if (arabicNumber == 50) {
+
+                arabicNumber = arabicNumber - 50;
+                romanNumeral = romanNumeral + "L";
+            }
+
+            if (arabicNumber == 100) {
+
+                arabicNumber = arabicNumber - 100;
+                romanNumeral = romanNumeral + "C";
+            }
+
+            if (arabicNumber == 500) {
+
+                arabicNumber = arabicNumber - 500;
+                romanNumeral = romanNumeral + "D";
+            }
+
+            if (arabicNumber == 1000) {
+
+                arabicNumber = arabicNumber - 1000;
+                romanNumeral = romanNumeral + "M";
+            }
+
+            if (arabicNumber > 0) {
+                romanNumeral = romanNumeral + "I";
+                arabicNumber = arabicNumber - 1;
+            }
         }
+
+
+
+
+        return romanNumeral;
     }
 }
