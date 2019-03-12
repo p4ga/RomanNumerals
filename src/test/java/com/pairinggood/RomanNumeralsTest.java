@@ -132,6 +132,20 @@ public class RomanNumeralsTest {
     }
 
     @Test
+    public void whenArabicNumberFortyNineEntered_RomanNumeral_IL_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(49);
+
+        //assert
+        Assert.assertEquals("IL",romanNumeral);
+
+    }
+
+    @Test
     public void whenArabicNumberFiftyEntered_RomanNumeral_L_Returned(){
 
         //arrange
@@ -156,6 +170,20 @@ public class RomanNumeralsTest {
 
         //assert
         Assert.assertEquals("LI",romanNumeral);
+
+    }
+
+    @Test
+    public void whenArabicNumberNinetyNineEntered_RomanNumeral_IC_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(99);
+
+        //assert
+        Assert.assertEquals("IC",romanNumeral);
 
     }
 
@@ -188,6 +216,20 @@ public class RomanNumeralsTest {
     }
 
     @Test
+    public void whenArabicNumberFourHundredNinetyNineEntered_RomanNumeral_ID_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(499);
+
+        //assert
+        Assert.assertEquals("ID",romanNumeral);
+
+    }
+
+    @Test
     public void whenArabicNumberFiveHundredEntered_RomanNumeral_D_Returned(){
 
         //arrange
@@ -202,16 +244,16 @@ public class RomanNumeralsTest {
     }
 
     @Test
-    public void whenArabicNumberFiveHundredOneEntered_RomanNumeral_DI_Returned(){
+    public void whenArabicNumberNineHundredNinetyNineEntered_RomanNumeral_IM_Returned(){
 
         //arrange
         RomanNumeral converter = new RomanNumeral();
 
         //act
-        String romanNumeral = converter.convert(501);
+        String romanNumeral = converter.convert(999);
 
         //assert
-        Assert.assertEquals("DI",romanNumeral);
+        Assert.assertEquals("IM",romanNumeral);
 
     }
 

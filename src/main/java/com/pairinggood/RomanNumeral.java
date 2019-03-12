@@ -14,10 +14,22 @@ public class RomanNumeral {
                 romanNumeral = romanNumeral + "M";
             }
 
+            if (arabicNumber == 999) {
+
+                arabicNumber = arabicNumber - 999;
+                romanNumeral = romanNumeral + "IM";
+            }
+
             if (arabicNumber >= 500) {
 
                 arabicNumber = arabicNumber - 500;
                 romanNumeral = romanNumeral + "D";
+            }
+
+            if (arabicNumber == 499) {
+
+                arabicNumber = arabicNumber - 499;
+                romanNumeral = romanNumeral + "ID";
             }
 
             if (arabicNumber >= 100) {
@@ -26,10 +38,22 @@ public class RomanNumeral {
                 romanNumeral = romanNumeral + "C";
             }
 
+            if (arabicNumber == 99) {
+
+                arabicNumber = arabicNumber - 99;
+                romanNumeral = romanNumeral + "IC";
+            }
+
             if (arabicNumber >= 50) {
 
                 arabicNumber = arabicNumber - 50;
                 romanNumeral = romanNumeral + "L";
+            }
+
+            if (arabicNumber == 49) {
+
+                arabicNumber = arabicNumber - 49;
+                romanNumeral = romanNumeral + "IL";
             }
 
             if (arabicNumber >= 10) {
