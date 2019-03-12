@@ -32,10 +32,16 @@ public class RomanNumeral {
                 romanNumeral = romanNumeral + "L";
             }
 
-            if (arabicNumber == 10) {
+            if (arabicNumber >= 10) {
 
                 arabicNumber = arabicNumber - 10;
                 romanNumeral = romanNumeral + "X";
+            }
+
+            if (arabicNumber == 9) {
+
+                arabicNumber = arabicNumber - 9;
+                romanNumeral = romanNumeral + "IX";
             }
 
             if (arabicNumber >= 5) {

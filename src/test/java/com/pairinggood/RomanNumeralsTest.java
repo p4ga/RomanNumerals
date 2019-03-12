@@ -90,6 +90,20 @@ public class RomanNumeralsTest {
     }
 
     @Test
+    public void whenArabicNumberNineEntered_RomanNumeral_IX_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(9);
+
+        //assert
+        Assert.assertEquals("IX",romanNumeral);
+
+    }
+
+    @Test
     public void whenArabicNumberTenEntered_RomanNumeral_X_Returned(){
 
         //arrange
@@ -100,6 +114,20 @@ public class RomanNumeralsTest {
 
         //assert
         Assert.assertEquals("X",romanNumeral);
+
+    }
+
+    @Test
+    public void whenArabicNumberElevenEntered_RomanNumeral_XI_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(11);
+
+        //assert
+        Assert.assertEquals("XI",romanNumeral);
 
     }
 
