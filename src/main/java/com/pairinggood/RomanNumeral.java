@@ -8,25 +8,25 @@ public class RomanNumeral {
 
         while (arabicNumber > 0) {
 
-            if (arabicNumber == 1000) {
+            if (arabicNumber >= 1000) {
 
                 arabicNumber = arabicNumber - 1000;
                 romanNumeral = romanNumeral + "M";
             }
 
-            if (arabicNumber == 500) {
+            if (arabicNumber >= 500) {
 
                 arabicNumber = arabicNumber - 500;
                 romanNumeral = romanNumeral + "D";
             }
 
-            if (arabicNumber == 100) {
+            if (arabicNumber >= 100) {
 
                 arabicNumber = arabicNumber - 100;
                 romanNumeral = romanNumeral + "C";
             }
 
-            if (arabicNumber == 50) {
+            if (arabicNumber >= 50) {
 
                 arabicNumber = arabicNumber - 50;
                 romanNumeral = romanNumeral + "L";
