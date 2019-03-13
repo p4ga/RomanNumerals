@@ -244,6 +244,20 @@ public class RomanNumeralsTest {
     }
 
     @Test
+    public void whenArabicNumberFiveHundredOneEntered_RomanNumeral_DI_Returned(){
+
+        //arrange
+        RomanNumeral converter = new RomanNumeral();
+
+        //act
+        String romanNumeral = converter.convert(501);
+
+        //assert
+        Assert.assertEquals("DI",romanNumeral);
+
+    }
+
+    @Test
     public void whenArabicNumberNineHundredNinetyNineEntered_RomanNumeral_IM_Returned(){
 
         //arrange
