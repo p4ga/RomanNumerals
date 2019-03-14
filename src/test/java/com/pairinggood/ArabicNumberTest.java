@@ -130,4 +130,32 @@ public class ArabicNumberTest {
         Assert.assertEquals(1000, arabicNumber);
 
     }
+
+    @Test
+    public void whenRomanNumeral_XXXVII_EnteredArabicNumber_37_Returned() {
+
+        //arrange
+        ArabicNumber converter = new ArabicNumber();
+
+        //act
+        int arabicNumber = converter.convert("XXXVII");
+
+        //assert
+        Assert.assertEquals(37, arabicNumber);
+
+    }
+
+    @Test
+    public void whenRomanNumeral_XXXIV_EnteredArabicNumber_34_Returned() {
+
+        //arrange
+        ArabicNumber converter = new ArabicNumber();
+
+        //act
+        int arabicNumber = converter.convert("XXXIV");
+
+        //assert
+        Assert.assertEquals(34, arabicNumber);
+
+    }
 }
