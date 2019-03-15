@@ -158,4 +158,18 @@ public class ArabicNumberTest {
         Assert.assertEquals(34, arabicNumber);
 
     }
+
+    @Test
+    public void whenRomanNumeral_XXXIX_EnteredArabicNumber_39_Returned() {
+
+        //arrange
+        ArabicNumber converter = new ArabicNumber();
+
+        //act
+        int arabicNumber = converter.convert("XXXIX");
+
+        //assert
+        Assert.assertEquals(39, arabicNumber);
+
+    }
 }

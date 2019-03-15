@@ -11,6 +11,11 @@ public class ArabicNumber {
             romanNumeral = romanNumeral.replace("IV", "");
         }
 
+        if(romanNumeral.contains("IX")) {
+            arabicNumber = arabicNumber + 9;
+            romanNumeral = romanNumeral.replace("IX", "");
+        }
+
         final char[] letters = romanNumeral.toCharArray();
 
         arabicNumber = calculateLetterByLetter(letters, arabicNumber);
@@ -32,39 +37,39 @@ public class ArabicNumber {
 
             if (letter == 'I') {
 
-               arabicNumber = arabicNumber + 1;
+                arabicNumber = arabicNumber + 1;
 
-           }
+            }
 
-           if (letter == 'V') {
+            if (letter == 'V') {
 
-               arabicNumber = arabicNumber + 5;
+                arabicNumber = arabicNumber + 5;
 
-           }
+            }
 
-           if (letter == 'X') {
+            if (letter == 'X') {
 
-               arabicNumber = arabicNumber + 10;
+                arabicNumber = arabicNumber + 10;
 
-           }
+            }
 
-           if (letter == 'C') {
+            if (letter == 'C') {
 
-               arabicNumber = arabicNumber + 100;
+                arabicNumber = arabicNumber + 100;
 
-           }
+            }
 
-           if (letter == 'D') {
+            if (letter == 'D') {
 
-               arabicNumber = arabicNumber + 500;
+                arabicNumber = arabicNumber + 500;
 
-           }
+            }
 
-           if (letter == 'M') {
+            if (letter == 'M') {
 
-               arabicNumber = arabicNumber + 1000;
+                arabicNumber = arabicNumber + 1000;
 
-           }
+            }
         }
         return arabicNumber;
     }
