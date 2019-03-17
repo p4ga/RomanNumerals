@@ -172,4 +172,18 @@ public class ArabicNumberTest {
         Assert.assertEquals(39, arabicNumber);
 
     }
+
+    @Test
+    public void whenRomanNumeral_CMXCIX_EnteredArabicNumber_999_Returned() {
+
+        //arrange
+        ArabicNumber converter = new ArabicNumber();
+
+        //act
+        int arabicNumber = converter.convert("CMXCIX");
+
+        //assert
+        Assert.assertEquals(999, arabicNumber);
+
+    }
 }

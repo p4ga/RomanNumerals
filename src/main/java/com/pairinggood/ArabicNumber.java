@@ -16,6 +16,26 @@ public class ArabicNumber {
             romanNumeral = romanNumeral.replace("IX", "");
         }
 
+        if(romanNumeral.contains("XL")) {
+            arabicNumber = arabicNumber + 40;
+            romanNumeral = romanNumeral.replace("XL", "");
+        }
+
+        if(romanNumeral.contains("XC")) {
+            arabicNumber = arabicNumber + 90;
+            romanNumeral = romanNumeral.replace("XC", "");
+        }
+
+        if(romanNumeral.contains("CD")) {
+            arabicNumber = arabicNumber + 400;
+            romanNumeral = romanNumeral.replace("CD", "");
+        }
+
+        if(romanNumeral.contains("CM")) {
+            arabicNumber = arabicNumber + 900;
+            romanNumeral = romanNumeral.replace("CM", "");
+        }
+
         final char[] letters = romanNumeral.toCharArray();
 
         arabicNumber = calculateLetterByLetter(letters, arabicNumber);
